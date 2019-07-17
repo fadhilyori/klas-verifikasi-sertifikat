@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% include 'verifikasi_sertifikat/sertifikat_form.html' %}
+    {% if valid %}
+      <div class="card border-primary">
+        <div class="card-body">
+          <h4 class="card-title">Sertifikat anda Valid <i class="fas fa-check-circle"></i></h4>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Nama</h4>
+          <p class="card-text">{{ sertifikat.peserta.nama }}</p>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Instansi</h4>
+          <p class="card-text">{{ sertifikat.peserta.instansi }}</p>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Perkerjaan</h4>
+          <p class="card-text">{{ sertifikat.peserta.pekerjaan }}</p>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Kegiatan</h4>
+          <p class="card-text">{{ sertifikat.kegiatan.nama }}</p>
+        </div>
+      </div>
+    {% else %}
+      <div class="card border-primary p-5">
+          <h4 class="card-title text-center">
+            <i class="fas fa-exclamation-triangle"></i>
+            Sertifikat anda tidak ditemukan
+          </h4>
+      </div>
+    {% endif %}
+{% endblock %}
