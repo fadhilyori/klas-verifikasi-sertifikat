@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # TODO: Configure Models with real database that will be implemented
 
 # Create your models here.
@@ -13,6 +14,7 @@ class Peserta(models.Model):
     bergabungTanggal = models.DateTimeField(auto_now_add=True)
     lastUpdate = models.DateTimeField(auto_now=True)
 
+
 class Kegiatan(models.Model):
     nama = models.TextField(max_length=120)
     deskripsi = models.TextField(max_length=500)
@@ -20,6 +22,7 @@ class Kegiatan(models.Model):
     tanggalSelesai = models.DateField()
     jamMulai = models.TimeField()
     jamSelesai = models.TimeField()
+
 
 class Sertifikat(models.Model):
     kode = models.CharField(max_length=120)
