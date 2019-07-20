@@ -1,0 +1,9 @@
+<form method="post" novalidate>
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="kode">Kode</label>
+        <input type="text" class="form-control" name="kode" id="kode" aria-describedby="kodeId" placeholder="Masukkan Kode Sertifikat">
+        <small id="kodeId" class="form-text text-muted">Masukkan kode yang tertera pada Sertifikat anda</small>
+    </div>
+    <button type="submit" class="btn btn-success">Validate</button>
+</form>
