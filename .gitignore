@@ -1,7 +1,3 @@
-venv/
-.idea/
-.vscode/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -107,8 +103,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# Exclude collected Django static files
-static_collected
-
-# Exclude machine-specific vs code settings
-.vscode/settings.json
+# VisualStudioCode
+.vscode/

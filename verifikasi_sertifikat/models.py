@@ -1,5 +1,7 @@
 from django.db import models
 
+# TODO: Configure Models with real database that will be implemented
+
 # Create your models here.
 class Peserta(models.Model):
     nama = models.TextField(max_length=100, unique=True)
